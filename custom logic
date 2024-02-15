@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "./IZkSync.sol";
+
+contract CustomZkSyncLogic {
+    IZkSync public zkSync;
+
+    constructor(address _zkSync) {
+        zkSync = IZkSync(_zkSync);
+    }
+
+    function customZkSyncLogic() external {
+        // Add your custom logic here
+    }
+}
